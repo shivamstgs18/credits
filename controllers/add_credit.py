@@ -5,7 +5,7 @@ from params import PostCreditParam
 # Importing the data variable from the db module
 from db.db import data
 
-def add_credit(credit_data: PostCreditParam):
+def add_credit(user_id: str, credit_data: PostCreditParam):
     """Add credit API controller"""
     
     # Access the global data variable, which is a list storing credit records
@@ -20,7 +20,7 @@ def add_credit(credit_data: PostCreditParam):
     credit.update(credit_data.__dict__)
 
     # Append the new credit record to the data list
-    data.append(credit)
+    data[user_id].append(credit)
     
     # Return a success response with the generated credit ID
     return {"Success": True, "id": credit["id"]}

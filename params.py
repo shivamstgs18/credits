@@ -37,3 +37,7 @@ class UpdateCreditparam(BaseModel):
     loan_amount: Optional[int] = None
     loan_interest_percent: Optional[int] = None
     account_status: Optional[AccountStatusEnum] = None
+
+class UserBase(BaseModel):
+    username: str
+    password: str
