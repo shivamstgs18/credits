@@ -16,7 +16,7 @@ uvicorn main:app --reload
 Access the application at http://127.0.0.1:8000 in your web browser.
 
 
-Swagger UI : http://127.0.0.1:8000/docs
+Swagger UI: http://127.0.0.1:8000/docs
 
 POST '/token'
 Get JWT for a specific user
@@ -28,16 +28,16 @@ GET '/credits/{user_id}'
 Get all credits for a specific user
 
 GET 'my_credits'
-Get all credits of the current logged-in user
+Get all credits of the currently logged-in user
 
 POST '/credits'
-Add new credit to the current logged-in user
+Add new credit to the currently logged-in user
 
 PUT '/credits'
-Update a specific credit for the current logged-in user
+Update a specific credit for the currently logged-in user
 
 DELETE '/credits/{id}'
-Delete the specific credit for the current logged-in user
+Delete the specific credit for the currently logged-in user
 
 
 Try the above API flow with any of these users:
