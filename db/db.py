@@ -1,3 +1,4 @@
+# Sample dataset representing information about different companies
 data = [
     {
         "id": "3fa5ed33-c29b-4260-9630-3a5c33a0815a",
